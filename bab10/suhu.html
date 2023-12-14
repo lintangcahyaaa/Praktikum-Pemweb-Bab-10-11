@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+  <head>
+    <title>Konversikan Suhu</title>
+    <h1>SISTEM CONVERT SUHU</h1>
+  </head>
+  <body>
+    <form onsubmit="convert(event)">
+      <input type="number" name="" id="number" />
+
+      <select name="from" id="from">
+        <option value="c">Celcius</option>
+        <option value="r">Reamur</option>
+        <option value="f">Fahrenheit</option>
+      </select>
+      convert to
+      <select name="to" id="to">
+        <option value="c">Celcius</option>
+        <option value="r">Reamur</option>
+        <option value="f">Fahrenheit</option>
+    </select>
+
+    <button type="submit">CONVERT NOW</button>
+  </form>
+
+  <div style="display: flex; flex-direction: row; align-items: center">
+    <p>The Result :</p>
+    <div
+      id="initial"
+      style="display: flex; flex-direction: row; align-items: center"
+    >
+      <h3></h3>
+      <span></span>
+    </div>
+    <div>&nbsp;=&nbsp;</div>
+    <div
+      id="result"
+      style="display: flex; flex-direction: row; align-items: center"
+    >
+      <h3></h3>
+      <span></span>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./jssuhu.js"></script>
+</body>
+</html>
+
